@@ -1,0 +1,25 @@
+* {
+	font-family: sans-serif;
+}
+
+.flow > * + * {
+	margin-top: 2em;
+}
+
+header.site-header {
+	background-color: black;
+	margin-bottom: 1em;
+}
+
+main {
+	width: 50ch;
+	margin: 0 auto;
+	line-height: 1.75em;
+}
+
+aside {
+	/* background-color: lightgoldenrodyellow; */
+	/* max-width: 60ch; */
+	padding: 5% 10%;
+	background-color: lightcyan;
+}

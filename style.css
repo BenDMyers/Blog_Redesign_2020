@@ -1,0 +1,29 @@
+.wrapper {
+	max-width: 50ch;
+	margin: 0 auto;
+}
+
+header {
+	background-color: black;
+}
+
+main {
+	max-width: 50ch;
+	margin: 0 auto;
+	/* font-family: sans-serif; */
+}
+
+aside {
+	background-color: #eeeeee;
+	padding: 50px;
+	outline: 2px solid #aaf0d1;
+}
+
+.full-bleed {
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+}
+
+.flow > * + * {
+	margin-top: 30px;
+}

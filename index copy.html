@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="_reset.css" />
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+	<link rel="stylesheet" href="nation/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="banner">
+		<a id="site-name" href="/">Ben Myers&nbsp;</a>
+		<nav>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/talks">Talks</a>
+			</li>
+			<li>
+				<a href="/portfolio">Portfolio</a>
+			</li>
+		</nav>
+	</header>
+	<main>
+		<article class="flow">
+			<header>
+				<time datetime="2020-06-27">June 27, 2020</time>
+				<!-- <h1>My Good Post</h1> -->
+				<h1>How Domino's Could Topple the Accessible Web – Part 1: Public Accommodations</h1>
+			</header>
+			<section class="post-body">
+				<!-- <nav aria-labelledby="toc" class="table-of-contents"><a href="#beginning" class="toc-skiplink screenreader">Skip
+						table of contents</a>
+					<h2 id="toc" class="toc-heading"><a href="#toc" class="anchor anchor-hide" aria-label="Permalink"><svg
+								stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" aria-hidden="true"
+								height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+								</path>
+							</svg></a>Table of Contents</h2>
+					<ol class="toc-list">
+						<li><a href="#whats-happening">What's Happening</a></li>
+						<li><a href="#does-the-law-require-web-accessibility">Does the Law Require Web Accessibility?</a>
+							<ol>
+								<li><a href="#what-is-a-public-accommodation">What is a Public Accommodation?</a></li>
+								<li><a href="#so-are-websites-public-accommodations">So, Are Websites Public Accommodations?</a>
+									<ol>
+										<li><a href="#opinion-1-yes-websites-are-public-accommodations">Opinion #1: Yes, Websites
+												Are Public Accommodations</a></li>
+										<li><a href="#opinion-2-no-websites-are-not-public-accommodations">Opinion #2: No, Websites
+												Are Not Public Accommodations</a></li>
+										<li><a href="#opinion-3-websites-are-sometimes-public-accommodations">Opinion #3: Websites
+												Are Sometimes Public Accommodations</a></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li><a href="#takeaways">Takeaways</a></li>
+						<li><a href="#footnotes">Footnotes</a></li>
+					</ol>
+				</nav> -->
+				<!-- <div id="beginning"></div> -->
+				<aside>
+					This post is the first in a three-part series on web accessibility in American case law, and the impact
+					<i>Robles v. Domino's Pizza</i> could have on that landscape. This first entry focuses on the ways courts
+					interpret public accommodations.
+				</aside>
+				<!-- <p><i>This post is the first in a three-part series on web accessibility in American case law, and the impact
+						<i>Robles v. Domino's Pizza</i> could have on that landscape. This first entry focuses on the ways courts
+						interpret public accommodations.</i></p> -->
+				<h2 id="whats-happening"><a href="#whats-happening" class="anchor anchor-hide" aria-label="Permalink"><svg
+							stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" aria-hidden="true"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						What's Happening
+					<!-- </div> -->
+				</h2>
+				<p>Last year, 2,285 web accessibility cases were filed in the US. That's about six cases a day, and it's almost
+					three times as many cases as 2017.<a class="footnote-reference" href="#fn-1" id="fn-ref-1"><span
+							class="screenreader"> Go to footnote </span><sup>[1]</sup></a> As the number of cases rises, so too does
+					the media attention, and no case has quite stolen that spotlight like <i>Robles v. Domino's Pizza</i> has.</p>
+				<p>Guillermo Robles has had a storied three years. As a blind man who navigates the web using a screenreader, he
+					found he was unable to order pizza from Domino's. He filed a suit against Domino's in September 2016, alleging
+					that Domino's website and mobile app were incompatible with his screenreader. The Central District of California
+					dismissed the case on the grounds that the law was not concrete enough to hold Domino's accountable. The Ninth
+					Circuit Court of Appeals overturned that dismissal in January 2019, asserting that the law does, in fact, hold
+					the pizza chain accountable for inaccessible websites and apps. Most recently, in July, Domino's petitioned to
+					bring the case to the Supreme Court. They're backed by the U.S. Chamber of Commerce, the Restaurant Law Center,
+					and the National Retail Federation.<a class="footnote-reference" href="#fn-2" id="fn-ref-2"><span
+							class="screenreader"> Go to footnote </span><sup>[2]</sup></a> Businesses really, really want to see
+					this case go their way.</p>
+				<p>This case could have a lasting impact for many disabled users of the internet. The Supreme Court has not yet seen
+					a web accessibility case, meaning lower courts have been left to figure this out for themselves. Specifically,
+					courts have been grappling with two big questions:</p>
+				<ol>
+					<li>Does American law require websites to be accessible?</li>
+					<li>If so, which standards of accessibility are websites held to?</li>
+				</ol>
+				<p>The courts' many responses to those questions have led to a lot of confusion, ambiguity, and frustration.
+					However, understanding where these courts are coming from is vital to understanding the future of disabled
+					users' access to the internet.</p>
+				<p>Let's look at that first question:</p>
+				<h2 id="does-the-law-require-web-accessibility"><a href="#does-the-law-require-web-accessibility"
+						class="anchor anchor-hide" aria-label="Permalink"><svg stroke="currentColor" fill="currentColor"
+							stroke-width="0" viewBox="0 0 576 512" aria-hidden="true" height="1em" width="1em"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						Does the Law Require Web Accessibility?
+					<!-- </div> -->
+				</h2>
+				<p>No federal law mentions web accessibility. As a result, courts turn to the next best thing: the Americans with
+					Disabilities Act. <a href="https://www.ada.gov/pubs/adastatute08.htm#SubchapIII">Title III of the ADA</a>
+					forbids public accommodations from discriminating against disabled Americans:</p>
+				<blockquote>
+					<p>"No individual shall be discriminated against on the basis of disability in the full and equal enjoyment of
+						the goods, services, facilities, privileges, advantages, or accommodations of any place of public
+						accommodation by any person who owns, leases (or leases to), or operates a place of public accommodation."
+					</p>
+				</blockquote>
+				<p>Disabled plaintiffs argue that websites count as public accommodations and, as a result, cannot be inaccessible.
+				</p>
+				<h3 id="what-is-a-public-accommodation"><a href="#what-is-a-public-accommodation" class="anchor anchor-hide"
+						aria-label="Permalink"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+							aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						What is a Public Accommodation?
+					<!-- </div> -->
+				</h3>
+				<p>It's here that a definition of "public accommodation" would be really nice. Title III, however, does not provide
+					one. Instead, it offers <a href="https://www.ada.gov/pubs/adastatute08.htm#12181">a long list of examples of
+						public accommodations</a>, including hotels, restaurants, banks, travel services, zoos, laundromats, and
+					many more. This list is well understood to be nonexhaustive.<a class="footnote-reference" href="#fn-3"
+						id="fn-ref-3"><span class="screenreader"> Go to footnote </span><sup>[3]</sup></a> Crucially, however, it
+					does not mention websites.</p>
+				<h3 id="so-are-websites-public-accommodations"><a href="#so-are-websites-public-accommodations"
+						class="anchor anchor-hide" aria-label="Permalink"><svg stroke="currentColor" fill="currentColor"
+							stroke-width="0" viewBox="0 0 576 512" aria-hidden="true" height="1em" width="1em"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						So, Are Websites Public Accommodations?
+					<!-- </div> -->
+				</h3>
+				<p>Courts are divided on this question, but their opinions can be roughly grouped into three categories:</p>
+				<ol>
+					<li>Yes, websites are public accommodations.</li>
+					<li>No, websites are not public accommodations.</li>
+					<li>Websites are <em>sometimes</em> public accommodations.</li>
+				</ol>
+				<p>These opinions conflict a lot, meaning there are many cases with inconsistent rulings.</p>
+				<hr role="presentation">
+				<h4 id="opinion-1-yes-websites-are-public-accommodations"><a
+						href="#opinion-1-yes-websites-are-public-accommodations" class="anchor anchor-hide"
+						aria-label="Permalink"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+							aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						Opinion #1: Yes, Websites Are Public Accommodations
+					<!-- </div> -->
+				</h4>
+				<p>Amongst courts, the opinion that websites are inherently public accommodations is the most fringe. These courts,
+					namely the First and Seventh Circuit Courts of Appeals, maintain that websites are public accommodations just by
+					virtue of providing a service.</p>
+				<p>The courts argue that there is precedent for nonphysical spaces counting as public accommodations. They wipe the
+					dust off an old case, ADA-wise: the <i>Carparts Distribution Center, Inc. v. Automotive Wholesaler's Association
+						of New England</i> case from 1994. In <i>Carparts</i>, the First Circuit ruled that the ADA covered
+					phone-based services. They noted that Congress had included travel services in the list of example public
+					accommodations. At the time, the travel services industry was largely telephone-based, so the First Circuit
+					reasoned that <em>obviously</em> Congress intended to include nonphysical spaces such as telephone lines.</p>
+				<p>In their <i>Carparts</i> ruling, the First Circuit noted that:</p>
+				<blockquote>
+					<p class="quote-contents">"It would be irrational to conclude that persons who enter an office to purchase
+						services are protected by the ADA, but persons who purchase the same services over the telephone or by mail
+						are not. Congress could not have intended such an absurd result."</p><cite
+						class="quote-attribution"><span>First Circuit Court of Appeals,&nbsp;<i><a
+									href="https://scholar.google.com/scholar_case?case=3450944898673982089">Carparts Distribution
+									Ctr. v. Automotive Wholesaler's Ass'n.</a></i></span></cite>
+				</blockquote>
+				<p>The Seventh Circuit court has applied this reasoning to an insurance company that sold its services online:</p>
+				<blockquote>
+					<p class="quote-contents">"The defendant asks us to interpret 'public accommodation' literally, as denoting a
+						physical site, such as a store or a hotel, but we have already rejected that interpretation. An insurance
+						company can no more refuse to sell a policy to a disabled person over the Internet than a furniture store
+						can refuse to sell furniture to a disabled person who enters the store."</p><cite
+						class="quote-attribution"><span>Seventh Circuit Court of Appeals,&nbsp;<i><a
+									href="https://scholar.google.com/scholar_case?case=731343607554833896">Morgan v. Joint Admin.
+									Bd.</a></i></span></cite>
+				</blockquote>
+				<p><a href="https://scholar.google.com/scholar_case?case=15520314324288957354">Netflix</a>, <a
+						href="https://scholar.google.com/scholar_case?case=8523925640371825721">Scribd</a>, and <a
+						href="http://www.nhd.uscourts.gov/sites/default/files/opinions/17/17NH236.pdf">Blue Apron</a> have all found
+					themselves at the receiving end of courts of this opinion.</p>
+				<hr role="presentation">
+				<h4 id="opinion-2-no-websites-are-not-public-accommodations"><a
+						href="#opinion-2-no-websites-are-not-public-accommodations" class="anchor anchor-hide"
+						aria-label="Permalink"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+							aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						Opinion #2: No, Websites Are Not Public Accommodations
+					<!-- </div> -->
+				</h4>
+				<p>If the First Circuit's <i>Carparts</i> ruling seems like a bit of a stretch to you, you're not alone.</p>
+				<p>Courts of this opinion, such as the Third, Fifth, and Sixth Circuit Courts, point to the ADA's full wording:
+					"<strong>place</strong> of public accommodation." Nonphysical spaces such as websites, they argue, aren't
+					places, and therefore they aren't covered by Title III. To claim that they are covered would be to vastly expand
+					the scope of the law:</p>
+				<blockquote>
+					<p class="quote-contents">"Here, to fall within the scope of the ADA as presently drafted, a public
+						accommodation must be a physical, concrete structure. To expand the ADA to cover 'virtual' spaces would be
+						to create new rights without well-defined standards."</p><cite class="quote-attribution"><span>District
+							Court for the Southern District of Florida,&nbsp;<i><a
+									href="https://scholar.google.com/scholar_case?case=9596654457159505828">Access Now, Inc. v.
+									Southwest Airlines, Co.</a></i></span></cite>
+				</blockquote>
+				<p><em>Full disclosure: the Southern District of Florida actually sided with Opinion #3 in the Southwest Airlines
+						case. This line just happens to be a very succinct explanation of Opinion #2.</em></p>
+				<p>These courts often explicitly reject the <i>Carparts</i> ruling as an overreach:</p>
+				<blockquote>
+					<p class="quote-contents">"In arriving at this conclusion, the First Circuit disregarded the statutory canon of
+						construction, <i>noscitur a sociis</i>. <i>[...]</i> The doctrine of <i>noscitur a sociis</i> instructs that
+						'a ... term is interpreted within the context of the accompanying words 'to avoid the giving of unintended
+						breadth to the Acts of Congress.'' <i>[...]</i> The clear connotation of the words in § 12181(7) <i>[the
+							list of examples of public accommodations]</i> is that a public accommodation is a physical place. Every
+						term listed in § 12181(7) and subsection (F) is a physical place open to public access."</p><cite
+						class="quote-attribution"><span>Sixth Circuit Court of Appeals,&nbsp;<i><a
+									href="https://scholar.google.com/scholar_case?case=2618241798638496180">Parker v. Metropolitan
+									Life Ins. Co.</a></i>, citations omitted</span></cite>
+				</blockquote>
+				<p>Other cases that have made similar arguments and have been used as precedents within these courts include <a
+						href="https://scholar.google.com/scholar_case?case=11431374417764636751"><i>Ford v. Schering-Plough
+							Corp.</i></a> and <a href="https://scholar.google.com/scholar_case?case=16043862805835728767"><i>Weyer
+							v. Twentieth Century Fox Film Corp.</i></a>.</p>
+				<p>Additionally, the ADA has been amended several times since the rise of the internet. If Congress really did
+					intend for the ADA to cover nonphysical spaces such as websites, surely they would have included that in one of
+					the amendments, right?<a class="footnote-reference" href="#fn-4" id="fn-ref-4"><span class="screenreader"> Go to
+							footnote </span><sup>[4]</sup></a></p>
+				<hr role="presentation">
+				<h4 id="opinion-3-websites-are-sometimes-public-accommodations"><a
+						href="#opinion-3-websites-are-sometimes-public-accommodations" class="anchor anchor-hide"
+						aria-label="Permalink"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+							aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						Opinion #3: Websites Are <em>Sometimes</em> Public Accommodations
+					<!-- </div> -->
+				</h4>
+				<p>The most frequent court opinion about websites as public accommodations kind of sidesteps the question altogether
+					by claiming that websites can be <em>extensions</em> of public accommodations.</p>
+				<blockquote>
+					<p class="quote-contents">"While there is some disagreement amongst district courts on this question, it appears
+						that the majority of courts agree that websites are not covered by the ADA unless some function on the
+						website hinders the full use and enjoyment of a physical space."</p><cite
+						class="quote-attribution"><span>District Court for the Southern District of Florida,&nbsp;<i><a
+									href="https://www.devinemillimet.com/getmedia/e026ae60-63c1-4895-abe8-42c5826d42fa/Gomez-v-Bang-Olufsen-Am-_-Inc-_-2017-U-S-Dist-LEXI.pdf">Gomez
+									v. Bang &amp; Olufsen Am., Inc.</a></i></span></cite>
+				</blockquote>
+				<p>This is the principle of <dfn>nexus</dfn>: if a website has a significant connection to the goods and services
+					offered by a physical public accommodation, then the website is seen as an extension of the public
+					accommodation. In that case, it would be subject to Title III. After all, Title III forbids obstructing access
+					to the goods and services "<strong>of</strong> any place of public accommodation," not "<strong>in</strong> any
+					place of public accommodation."</p>
+				<p>The first federal trial on web accessibility to be carried out in full was <a
+						href="https://scholar.google.com/scholar_case?case=6744502269111605689"><i>Gil v. Winn-Dixie</i></a> in
+					2017. Winn-Dixie offered digital coupons on their website that were only redeemable in their brick-and-mortar
+					stores. Additionally, Winn-Dixie gave customers the option to refill their prescriptions online, but the refills
+					also had to be picked up in-store. The Southern District of Florida determined that the Winn-Dixie website
+					therefore had a nexus to the brick-and-mortar franchises. Thus, the website's incompatibility with screenreaders
+					was a violation of the ADA.<a class="footnote-reference" href="#fn-5" id="fn-ref-5"><span class="screenreader">
+							Go to footnote </span><sup>[5]</sup></a></p>
+				<p>Nexus does go the other way. In <a
+						href="https://scholar.google.com/scholar_case?case=13814511373260202940"><i>Earll v. eBay, Inc.</i></a>, for
+					instance, a deaf plaintiff sued eBay since she couldn't use the site's phone-based vendor verification service.
+					The Ninth Circuit determined that, since eBay doesn't have any consumer-facing, brick-and-mortar locations, eBay
+					is not a public accommodation and is not subject to Title III.<a class="footnote-reference" href="#fn-6"
+						id="fn-ref-6"><span class="screenreader"> Go to footnote </span><sup>[6]</sup></a> <a
+						href="https://scholar.google.com/scholar_case?case=627192113961347360">Netflix</a>, <a
+						href="https://scholar.google.com/scholar_case?case=3753744983787595468">Viacom</a>, <a
+						href="https://scholar.google.com/scholar_case?case=14196698777849520612">Facebook</a>, and <a
+						href="https://scholar.google.com/scholar_case?case=9596654457159505828">Southwest Airlines</a> have also
+					been defended with a similar argument.</p>
+				<p>Much like it did during the Winn-Dixie case, the Ninth Circuit applied the nexus argument to Domino's this
+					January when overturning the district court's dismissal of Robles's case:</p>
+				<blockquote>
+					<p class="quote-contents">"Domino's website and app facilitate access to the goods and services of a place of
+						public accommodation — Domino's physical restaurants. They are two of the primary (and heavily advertised)
+						means of ordering Domino's products to be picked up at or delivered from Domino's restaurants. We agree with
+						the district court in this case — and the many other district courts that have confronted this issue in
+						similar contexts — that the ADA applies to Domino's website and app, which connect customers to the goods
+						and services of Domino's physical restaurants."</p><cite class="quote-attribution"><span>Ninth Circuit Court
+							of Appeals,&nbsp;<i><a
+									href="https://scholar.google.com/scholar_case?case=14468696865090361672&amp;hl=en&amp;as_sdt=6,44#p905">Robles
+									v. Domino's Pizza</a></i></span></cite>
+				</blockquote>
+				<hr role="presentation">
+				<h2 id="takeaways"><a href="#takeaways" class="anchor anchor-hide" aria-label="Permalink"><svg stroke="currentColor"
+							fill="currentColor" stroke-width="0" viewBox="0 0 576 512" aria-hidden="true" height="1em" width="1em"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+							</path>
+						</svg></a>
+					<!-- <div class="heading-contents"> -->
+						Takeaways
+					<!-- </div> -->
+				</h2>
+				<p>The <i>Robles v. Domino's Pizza</i> case is just one of many court cases centered around whether American law
+					requires websites to be accessible. The number of web accessibility-related lawsuits is only going to go up from
+					here as courts continue to give mixed opinions on the matter.</p>
+				<p>By appealing the Ninth Circuit's decision, Domino’s Pizza is giving the Supreme Court the opportunity to affirm,
+					finally, whether websites are inherently public accommodations, whether they're inherently <em>not</em> public
+					accommodations, or whether they count as public accommodations if a nexus is present.</p>
+				<p>However, while the question of whether the ADA covers websites is important, it's not the only question Domino's
+					is contesting. Stick around for Part 2, where we'll cover magic checklists and due process.</p>
+				<hr role="presentation">
+				<section aria-labelledby="footnotes" id="footnotes-container">
+					<h2 id="footnotes" class="footnotes-heading"><a href="#footnotes" class="anchor anchor-hide"
+							aria-label="Permalink"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								viewBox="0 0 576 512" aria-hidden="true" height="1em" width="1em"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.971 352h32.394C67.172 454.735 181.944 512 288 512c106.229 0 220.853-57.38 242.635-160h32.394c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h35.146c-20.29 54.317-84.963 86.588-144.117 94.015V256h52c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-52v-5.47c37.281-13.178 63.995-48.725 64-90.518C384.005 43.772 341.605.738 289.37.01 235.723-.739 192 42.525 192 96c0 41.798 26.716 77.35 64 90.53V192h-52c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v190.015c-58.936-7.399-123.82-39.679-144.117-94.015h35.146c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971 0L4.485 331.515C-3.074 339.074 2.28 352 12.971 352zM288 64c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32z">
+								</path>
+							</svg></a>Footnotes</h2>
+					<ol>
+						<li id="fn-1"><span><i>The National Law Review</i>, <a
+									href="https://www.natlawreview.com/article/when-good-sites-go-bad-growing-risk-website-accessibility-litigation"><i>When
+										Good Sites Go Bad: The Growing Risk of Website Accessibility Litigation</i></a></span><span
+								aria-hidden="true" class="footnote-pipe">|</span><a class="back-to-reference-arrow"
+								href="#fn-ref-1"><span class="screenreader">Return to reference 1</span><span
+									aria-hidden="true">↩</span></a></li>
+						<li id="fn-2"><span><i>The Washington Post</i>, <a
+									href="https://www.washingtonpost.com/politics/courts_law/do-protections-for-people-with-disabilities-apply-online-dominos-asks-high-court/2019/07/20/984c685e-a7fd-11e9-a3a6-ab670962db05_story.html"><i>Do
+										protections for people with disabilities apply online? Domino’s asks high
+										court.</i></a></span><span aria-hidden="true" class="footnote-pipe">|</span><a
+								class="back-to-reference-arrow" href="#fn-ref-2"><span class="screenreader">Return to reference
+									2</span><span aria-hidden="true">↩</span></a></li>
+						<li id="fn-3"><span>That is, to an extent. The twelve subcategories listed are pretty fixed, but enough of
+								the subcategories include "or other X" clauses that this list is pretty open to
+								interpretation.</span><span aria-hidden="true" class="footnote-pipe">|</span><a
+								class="back-to-reference-arrow" href="#fn-ref-3"><span class="screenreader">Return to reference
+									3</span><span aria-hidden="true">↩</span></a></li>
+						<li id="fn-4"><span>District Court for the Eastern District of Virginia, <a
+									href="https://news.cuna.org/ext/resources/NewsNow/2018/2018/January/Carroll-v-Northwest-Fed-CU---17cv1205---Order.pdf"><i>Carroll
+										v. Northwest Federal Credit Union</i></a></span><span aria-hidden="true"
+								class="footnote-pipe">|</span><a class="back-to-reference-arrow" href="#fn-ref-4"><span
+									class="screenreader">Return to reference 4</span><span aria-hidden="true">↩</span></a></li>
+						<li id="fn-5"><span>District Court for the Southern District of Florida, <a
+									href="https://scholar.google.com/scholar_case?case=6744502269111605689"><i>Gil v.
+										Winn-Dixie</i></a></span><span aria-hidden="true" class="footnote-pipe">|</span><a
+								class="back-to-reference-arrow" href="#fn-ref-5"><span class="screenreader">Return to reference
+									5</span><span aria-hidden="true">↩</span></a></li>
+						<li id="fn-6"><span>Ninth Circuit Court of Appeals, <a
+									href="https://scholar.google.com/scholar_case?case=13814511373260202940"><i>Earll v. eBay,
+										Inc.</i></a></span><span aria-hidden="true" class="footnote-pipe">|</span><a
+								class="back-to-reference-arrow" href="#fn-ref-6"><span class="screenreader">Return to reference
+									6</span><span aria-hidden="true">↩</span></a></li>
+					</ol>
+				</section>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div>
+			&copy;2020, Ben Myers
+		</div>
+	</footer>
+</html>
