@@ -64,7 +64,7 @@ main {
 }
 
 .post-body {
-	max-width: 50ch;
+	max-width: 65ch;
 	margin: 1.5em auto;
 }
 
@@ -157,7 +157,7 @@ em, dfn {
 
 article aside {
 	background-color: var(--tertiary-light);
-	width: 60ch;
+	width: 75ch;
 	margin-left: -5ch;
 	padding: 2.5ch 5ch;
 	color: black;
@@ -180,9 +180,9 @@ figcaption i {
 }
 
 blockquote {
-	width: 65ch;
-	margin-left: -7.5ch;
-	padding: 2ch 3.5ch;
+	width: 75ch;
+	margin-left: -5ch;
+	padding: 2ch 5ch;
 	border-left: 5px solid var(--secondary);
 	background-color: #f0f0f0;
 	font-style: italic;
