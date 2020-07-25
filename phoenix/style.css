@@ -1,0 +1,158 @@
+/* GLOBAL */
+:root {
+	--primary: #4b0061;
+	--primary-glare: #62007d;
+	--primary-shade: #340042;
+	--secondary: #ee4433;
+	--secondary-glare: #ff6a5b;
+	--secondary-shade: #cd2210;
+	--ternary: #eed043;
+	--ternary-glare: #ffe56a;
+	--ternary-shade: #dab819;
+	--lightgray: #fcfcfc;
+	--brand-font: "Nexa Heavy";
+	--body-font: 'Inter';
+	--mono-font: 'Fira Mono';
+	background-color: #f7f7f7;
+}
+
+:root *::selection {
+	background-color: var(--secondary);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	font-family: var(--brand-font);
+	font-weight: bold;
+	color: unset;
+
+	background-image: linear-gradient(120deg, var(--ternary-glare) 0%, var(--ternary-glare) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    -webkit-transition: background-size 0.25s ease-in;
+    transition: background-size 0.2s ease-in, color 0.25s ease-in;
+}
+
+a:hover, a:focus {
+	background-size: 100% 100%;
+	outline: none;
+	color: black;
+}
+
+/* HEADER/NAV */
+#banner {
+	/* background-color: var(--primary); */
+	background-color: var(--primary-shade);
+}
+
+#banner a {
+	color: white;
+	font-family: var(--brand-font), sans-serif;
+}
+
+#banner img {
+	width: 5%;
+	display: inline-block;
+}
+
+/* HOMEPAGE HERO */
+
+/* POST HERO */
+main header {
+	/* background-color: var(--primary-shade); */
+	background-color: var(--primary);
+	color: white;
+	text-align: center;
+}
+
+main header h1 {
+	/* display: inline-block; */
+	font-size: 300%;
+	margin: 7.5% auto;
+	padding-left: 15%;
+	padding-right: 15%;
+	line-height: 1em;
+}
+
+/* POST CONTENTS */
+main > * + *,
+article .post-body > * + *,
+article ul > * + *,
+article ol > * + * {
+	margin-top: 1.5em;
+}
+
+main em, main dfn {
+	font-family: "Nexa Heavy Italic";
+}
+
+main strong {
+	font-family: "Nexa Heavy";
+}
+
+.post-body {
+	max-width: 90ch;
+	margin: 1.5em auto;
+}
+
+main {
+	font-family: var(--body-font);
+	line-height: 2em;
+}
+
+/* main * {
+	line-height: 2em;
+} */
+
+h1 {
+	font-size: 2em;
+	/* font-family: "Boston Heavy" */
+	font-family: "Nexa Black"
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: "Nexa Black", "Nexa Demo", sans-serif;
+	font-weight: bold;
+}
+
+main code, main pre {
+	font-family: var(--mono-font), monospace;
+	/* font-weight: bold; */
+}
+
+blockquote {
+	background-color: #e7e7e7;
+	padding: 2%;
+	box-shadow: 4px 4px black;
+	border: 2px solid black;
+}
+
+aside {
+	padding: 2%;
+	background-color: var(--ternary-glare);
+}
+
+blockquote cite {
+	background-color: var(--secondary-glare);
+	color: white;
+	float: right;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	box-shadow: 4px 4px black;
+	border: 3px solid black;
+}
+
+blockquote cite a {
+	background-size: 100% 0.15em;
+}
+
+blockquote cite::before {
+	content: '—';
+}
+
+/* main blockquote cite::selection,
+main blockquote cite *::selection {
+	background-color: var(--primary-shade) !important;
+} */
