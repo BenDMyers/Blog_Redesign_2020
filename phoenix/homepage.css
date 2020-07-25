@@ -103,6 +103,14 @@ h2, h3, h4, h5, h6 {
 footer {
 	font-family: var(--body-font);
 	background-color: var(--primary);
+	background: linear-gradient(
+		/* 45deg, */
+		-45deg,
+		var(--primary-glare),
+		var(--primary-glare) 80%,
+		var(--primary) 80%,
+		var(--primary) 100%
+	);
 	color: white;
 	text-align: center;
 	padding: calc(2% + 50px) 2% 2% 2%;
