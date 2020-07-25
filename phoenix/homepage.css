@@ -222,11 +222,33 @@ main article:last-of-type {
 	}
 }
 
+@media only screen and (max-width: 460px) {
+	header nav {
+		flex-wrap: wrap;
+	}
+
+	#logo {
+		flex: 1 1 100% !important;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+
+	header nav > a:not(:first-child) {
+		flex: 1;
+		text-align: center;
+		justify-content: space-between;
+	}
+}
+
 header nav {
 	display: flex;
 	align-items: center;
 	margin-top: 1.2em;
 	justify-content: space-between;
+}
+
+#logo {
+	flex: 1;
 }
 
 header nav a[href="/"] {
