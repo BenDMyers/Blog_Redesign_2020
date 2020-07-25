@@ -86,7 +86,7 @@ main {
 
 main h2 {
 	font-size: 200%;
-	margin: 0 2% 2% 2%;
+	margin: 0.5em 2% 2% 2%;
 }
 
 h1 {
@@ -152,7 +152,7 @@ footer {
 	background-color: var(--ternary-glare);
 }
 
-.cta:active, .button:active {
+.cta:active, .button:active, header nav a:not([href="/"]):active {
 	transform: scale(0.95);
 }
 
@@ -193,6 +193,10 @@ a.cta:after {
 main article {
 	border-top: 1px solid #ddd3e4;
 	padding: 2% 2% 0 2%;
+}
+
+main article h3 {
+	margin-top: 1em;
 }
 
 main article:last-of-type {
